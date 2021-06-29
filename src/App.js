@@ -1,7 +1,13 @@
 import './App.css'
+import {ThemeProvider} from 'theme-ui'
+import theme from './theme'
 
 function App() {
-  return <div>DevBase React APP</div>
+  return (
+    <ThemeProvider theme={theme}>
+      <div>Home</div>
+    </ThemeProvider>
+  )
 }
 
 export default App
