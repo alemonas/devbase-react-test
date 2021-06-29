@@ -15,18 +15,20 @@ function Home() {
   ]
 
   // useEffect(() => {
-  //   // I get confuse, i was thinking to show more info about the user in the home page.. :O
-  //   // but is only the name, so I could harcoded the data in an Array (githubUsers)
-  //   // axios
-  //   //   .all([
-  //   //     axios.get('https://api.github.com/users/GrahamCampbell'),
-  //   //     axios.get('https://api.github.com/users/fabpot'),
-  //   //     axios.get('https://api.github.com/users/weierophinney'),
-  //   //     axios.get('https://api.github.com/users/rkh'),
-  //   //     axios.get('https://api.github.com/users/josh'),
-  //   //   ])
-  //   //   .then(resArr => {
-  //   //   })
+  //   NOTE: I get confuse, i was thinking to show more info about the user in the home page.. :O
+  //   but is only the name, so I could harcoded the data in an Array (githubUsers)
+  //   this took me some time.....
+
+  //   axios
+  //     .all([
+  //       axios.get('https://api.github.com/users/GrahamCampbell'),
+  //       axios.get('https://api.github.com/users/fabpot'),
+  //       axios.get('https://api.github.com/users/weierophinney'),
+  //       axios.get('https://api.github.com/users/rkh'),
+  //       axios.get('https://api.github.com/users/josh'),
+  //     ])
+  //     .then(resArr => {
+  //     })
   // }, [])
 
   return (
