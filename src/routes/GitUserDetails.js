@@ -1,5 +1,11 @@
+import Layout from '../components/Layout'
+
 function GitUserDetails() {
-  return <div>git user details page</div>
+  return (
+    <Layout>
+      <h1>User details</h1>
+    </Layout>
+  )
 }
 
 export default GitUserDetails
