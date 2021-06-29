@@ -3,9 +3,7 @@
 import Layout from '../components/Layout'
 // import {useState} from 'react'
 import {Container, Box, Flex} from 'theme-ui'
-
-// const apiURL = 'https://api.github.com/users/'
-// const githubUsers = ['GrahamCampbell', 'fabpot', 'y', 'rkh', 'josh']
+import {Link} from 'react-router-dom'
 
 function Home() {
   const githubUsers = [
@@ -18,7 +16,7 @@ function Home() {
 
   // useEffect(() => {
   //   // I get confuse, i was thinking to show more info about the user in the home page.. :O
-  //   // but is only the name, so I could harcoded the data
+  //   // but is only the name, so I could harcoded the data in an Array (githubUsers)
   //   // axios
   //   //   .all([
   //   //     axios.get('https://api.github.com/users/GrahamCampbell'),
@@ -46,7 +44,7 @@ function Home() {
                 sx={{flex: '1 1 auto', textAlign: 'center'}}
                 m={1}
               >
-                {user}
+                <Link to={`/git-user-details/${user}`}>{user}</Link>
               </Box>
             )
           })}

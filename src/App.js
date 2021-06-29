@@ -10,7 +10,7 @@ function AppRoutes() {
   return (
     <>
       <Switch>
-        <Route path="/git-user-details">
+        <Route path="/git-user-details/:id">
           <GitUserDetails />
         </Route>
         <Route path="/">
